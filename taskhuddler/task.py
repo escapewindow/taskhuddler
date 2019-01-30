@@ -19,7 +19,7 @@ class Task(object):
 
     @property
     def label(self):
-        """Extract label"""
+        """Extract label."""
         return self.json['task'].get('tags', {}).get(
             'label', self.json['task'].get('metadata').get('name', '')
         )
